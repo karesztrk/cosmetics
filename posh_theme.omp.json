@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "console_title":true,
+  "console_title_style":"template",
+  "console_title_template":"{{if .Root}}<Admin> {{end}} {{.Folder}}", 
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "session",
+          "background": "#f4005f",
+          "foreground": "#ffffff",
+          "leading_diamond": "",
+          "style": "diamond",
+          "trailing_diamond": "",
+          "properties": {
+            "display_host": false
+          }
+        },
+        {
+          "background": "#9d65ff",
+          "foreground": "#ffffff",
+          "powerline_symbol": "",
+          "properties": {
+            "prefix": " \uE5FF ",
+            "style": "folder"
+          },
+          "style": "powerline",
+          "type": "path"
+        },
+        {
+          "background": "#98e024",
+          "foreground": "#1a1a1a",
+          "powerline_symbol": "",
+          "style": "powerline",
+          "type": "git",
+          "properties": {
+            "display_upstream_icon": true,
+            "display_branch_status": true
+          }
+        },
+        {
+          "background": "#FF6471",
+          "foreground": "#ffffff",
+          "leading_diamond": "",
+          "properties": {
+            "prefix": "\u003ctransparent\u003e \u003c/\u003e"
+          },
+          "style": "diamond",
+          "trailing_diamond": "",
+          "type": "python"
+        },
+        {
+          "type": "executiontime",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#1a1a1a",
+          "properties": {
+            "threshold": 500,
+            "style": "austin",
+            "prefix": " <#fefefe>\ufbab</> "
+          }
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true
+}
