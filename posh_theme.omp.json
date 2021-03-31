@@ -9,8 +9,8 @@
       "segments": [
         {
           "type": "session",
-          "background": "#f4005f",
-          "foreground": "#ffffff",
+          "background": "#ff6188",
+          "foreground": "#403e41",
           "leading_diamond": "",
           "style": "diamond",
           "trailing_diamond": "",
@@ -19,8 +19,8 @@
           }
         },
         {
-          "background": "#9d65ff",
-          "foreground": "#ffffff",
+          "background": "#ab9df2",
+          "foreground": "#403e41",
           "powerline_symbol": "",
           "properties": {
             "prefix": " \uE5FF ",
@@ -30,8 +30,8 @@
           "type": "path"
         },
         {
-          "background": "#98e024",
-          "foreground": "#1a1a1a",
+          "background": "#a9dc76",
+          "foreground": "#403e41",
           "powerline_symbol": "",
           "style": "powerline",
           "type": "git",
@@ -42,7 +42,7 @@
         },
         {
           "background": "#FF6471",
-          "foreground": "#ffffff",
+          "foreground": "#fcfcfa",
           "leading_diamond": "",
           "properties": {
             "prefix": "\u003ctransparent\u003e \u003c/\u003e"
@@ -55,8 +55,8 @@
           "type": "executiontime",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
-          "foreground": "#ffffff",
-          "background": "#1a1a1a",
+          "foreground": "#fcfcfa",
+          "background": "#403e41",
           "properties": {
             "threshold": 500,
             "style": "austin",
