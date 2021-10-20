@@ -1,0 +1,69 @@
+{
+    "telemetry.enableTelemetry": false,
+    "workbench.colorTheme": "Aura Dark",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.fontSize": 15,
+    "terminal.integrated.fontSize": 15,
+    "editor.fontFamily": "Cascadia Code PL, Cousine NF, Fire Code, Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "FiraCode NF Retina",
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+    },
+    "workbench.startupEditor": "none",
+    "files.associations": {
+      "*.tpl": "html"
+    },
+    "eslint.format.enable": true,
+    "[javascript]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "files.autoSave": "onFocusChange",
+    "editor.fontLigatures": true,
+    "prettier.useEditorConfig": false,
+    "indentRainbow.colors": [
+      "rgba(162,119,255, 0.00)",
+      "rgba(162,119,255, 0.05)",
+      "rgba(162,119,255, 0.10)",
+      "rgba(162,119,255, 0.15)",
+      "rgba(162,119,255, 0.20)",
+      "rgba(162,119,255, 0.25)",
+      "rgba(162,119,255, 0.35)",
+      "rgba(162,119,255, 0.40)",
+      "rgba(162,119,255, 0.45)",
+      "rgba(162,119,255, 0.50)",
+      "rgba(162,119,255, 0.55)",
+      "rgba(162,119,255, 0.60)",
+      "rgba(162,119,255, 0.65)",
+      "rgba(162,119,255, 0.70)",
+      "rgba(162,119,255, 0.75)",
+      "rgba(162,119,255, 0.80)",
+      "rgba(162,119,255, 0.85)",
+      "rgba(162,119,255, 0.90)",
+      "rgba(162,119,255, 0.95)",
+      "rgba(162,119,255, 1.00)"
+    ],
+    "template-string-converter.autoRemoveTemplateString": true,
+    "template-string-converter.addBracketsToProps": true,
+    "files.eol": "\n",
+    "editor.bracketPairColorization.enabled": true,
+    "typescript.inlayHints.parameterNames.enabled": "all",
+    "[handlebars]": {
+      "editor.suggest.insertMode": "replace"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "turboConsoleLog.quote": "'",
+    "workbench.colorCustomizations": {
+      "editor.selectionBackground": "#3d375eef",
+      "editor.selectionHighlightBackground": "#3d375eef",
+      "editor.findMatchBackground": "#82e2ff55",
+      "editor.findMatchHighlightBackground": "#82e2ff55",
+      "editorCursor.foreground": "#edecee"
+    },
+    "editor.cursorBlinking": "phase"
+  }
+  

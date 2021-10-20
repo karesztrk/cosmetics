@@ -1,27 +1,33 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "console_title":true,
-  "console_title_style":"template",
-  "console_title_template":"{{if .Root}}<Admin> {{end}} {{.Folder}}", 
+  "console_title": true,
+  "console_title_style": "template",
+  "console_title_template": "{{if .Root}}<Admin> {{end}} {{.Folder}}",
   "blocks": [
     {
       "alignment": "left",
       "segments": [
         {
-          "type": "session",
-          "background": "#ff6188",
-          "foreground": "#403e41",
-          "leading_diamond": "",
-          "style": "diamond",
-          "trailing_diamond": "",
+          "type": "text",
+          "style": "plain",
+          "foreground": "#ffffff",
           "properties": {
-            "display_host": false
+            "prefix": "",
+            "postfix": "",
+            "text": "🚀 "
           }
         },
         {
-          "background": "#ab9df2",
-          "foreground": "#403e41",
-          "powerline_symbol": "",
+          "type": "session",
+          "foreground": "#a277ff",
+          "style": "plain",
+          "properties": {
+            "display_host": false,
+            "prefix": "\uf508 "
+          }
+        },
+        {
+          "foreground": "#61ffca",
           "properties": {
             "prefix": " \uE5FF ",
             "style": "folder"
@@ -30,9 +36,7 @@
           "type": "path"
         },
         {
-          "background": "#a9dc76",
-          "foreground": "#403e41",
-          "powerline_symbol": "",
+          "foreground": "#ffca85",
           "style": "powerline",
           "type": "git",
           "properties": {
@@ -41,26 +45,13 @@
           }
         },
         {
-          "background": "#FF6471",
-          "foreground": "#fcfcfa",
-          "leading_diamond": "",
-          "properties": {
-            "prefix": "\u003ctransparent\u003e \u003c/\u003e"
-          },
-          "style": "diamond",
-          "trailing_diamond": "",
-          "type": "python"
-        },
-        {
           "type": "executiontime",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#fcfcfa",
-          "background": "#403e41",
+          "style": "plain",
+          "foreground": "#ff6767",
           "properties": {
             "threshold": 500,
             "style": "austin",
-            "prefix": " <#fefefe>\ufbab</> "
+            "prefix": " <#ff6767>\ufbab</> "
           }
         }
       ],
