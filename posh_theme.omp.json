@@ -1,62 +1,57 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "console_title": true,
-  "console_title_style": "template",
-  "console_title_template": "{{if .Root}}<Admin> {{end}} {{.Folder}}",
   "blocks": [
     {
       "alignment": "left",
       "segments": [
         {
-          "type": "text",
-          "style": "plain",
           "foreground": "#ffffff",
-          "properties": {
-            "prefix": "",
-            "postfix": "",
-            "text": "🚀 "
-          }
+          "style": "plain",
+          "template": "🚀",
+          "type": "text"
         },
         {
-          "type": "session",
           "foreground": "#a277ff",
-          "style": "plain",
           "properties": {
-            "display_host": false,
-            "prefix": "\uf508 "
-          }
+            "display_host": false
+          },
+          "style": "plain",
+          "template": "\uf508 {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }} ",
+          "type": "session"
         },
         {
           "foreground": "#61ffca",
           "properties": {
-            "prefix": " \uE5FF ",
             "style": "folder"
           },
           "style": "powerline",
+          "template": " \ue5ff {{ .Path }} ",
           "type": "path"
         },
         {
           "foreground": "#ffca85",
-          "style": "powerline",
-          "type": "git",
           "properties": {
-            "display_upstream_icon": true,
-            "display_branch_status": true
-          }
+            "fetch_upstream_icon": true
+          },
+          "style": "powerline",
+          "template": " {{ .HEAD }} {{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}} \uf692 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }} ",
+          "type": "git"
         },
         {
-          "type": "executiontime",
-          "style": "plain",
           "foreground": "#ff6767",
           "properties": {
-            "threshold": 500,
             "style": "austin",
-            "prefix": " <#ff6767>\ufbab</> "
-          }
+            "threshold": 500
+          },
+          "style": "plain",
+          "template": " <#ff6767>\ufbab</> {{ .FormattedMs }} ",
+          "type": "executiontime"
         }
       ],
       "type": "prompt"
     }
   ],
-  "final_space": true
+  "console_title_template": "{{if .Root}}<Admin> {{end}} {{.Folder}}",
+  "final_space": true,
+  "version": 2
 }
