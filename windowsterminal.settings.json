@@ -3,15 +3,15 @@
   "$schema": "https://aka.ms/terminal-profiles-schema",
   "actions": [
     {
-      "command": "paste",
-      "keys": "ctrl+v"
-    },
-    {
       "command": {
         "action": "copy",
         "singleLine": false
       },
       "keys": "ctrl+c"
+    },
+    {
+      "command": "paste",
+      "keys": "ctrl+v"
     },
     {
       "command": "find",
@@ -142,6 +142,18 @@
         "hidden": false,
         "icon": "C:\\Program Files\\PowerShell\\7\\assets\\Powershell_av_colors.ico",
         "name": "Power Shell 7"
+      },
+      {
+        "guid": "{b742f217-3851-5cda-8b37-24db41d51a93}",
+        "hidden": false,
+        "name": "Default",
+        "source": "Windows.Terminal.VisualStudio"
+      },
+      {
+        "guid": "{301a46f2-5aba-5e88-9ee8-ccb94db0e921}",
+        "hidden": false,
+        "name": "Default",
+        "source": "Windows.Terminal.VisualStudio"
       }
     ]
   },

@@ -1,7 +1,5 @@
 {
-  "telemetry.enableTelemetry": false,
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "terminal.integrated.fontSize": 16,
   "editor.fontFamily": "Rec Mono Duotone, Cascadia Code, Cousine NF, Fire Code, Consolas, 'Courier New', monospace",
   "terminal.integrated.fontFamily": "FiraCode NF Retina",
@@ -61,8 +59,6 @@
   "debug.console.fontSize": 15,
   "editor.fontSize": 15,
   "editor.linkedEditing": true,
-  "workbench.productIconTheme": "bootstrap-product-icons",
-  "jest.autoRun": "off",
   "workbench.iconTheme": "Monokai Pro Icons",
   "eslint.format.enable": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
@@ -105,7 +101,6 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "git.branchProtection": ["master, main, dev, development"],
-  "window.experimental.commandCenter": true,
   "editor.formatOnSave": true,
   "workbench.preferredLightColorTheme": "Visual Studio Dark",
   "terminal.integrated.shellIntegration.enabled": true,
@@ -114,9 +109,18 @@
   "editor.cursorBlinking": "phase",
   "svg.preview.mode": "svg",
   "window.commandCenter": true,
-  "terminal.integrated.shellIntegration.decorationIcon": "arrow-right",
-  "terminal.integrated.shellIntegration.decorationIconSuccess": "arrow-right",
-  "terminal.integrated.shellIntegration.decorationIconError": "lightbulb",
   "terminal.integrated.shellIntegration.decorationsEnabled": "overviewRuler",
-  "editor.experimental.stickyScroll.enabled": true
+  "editor.tabSize": 2,
+  "workbench.productIconTheme": "bootstrap-product-icons",
+  "git.enableCommitSigning": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.maxLineCount": 10,
+  "editor.smoothScrolling": true,
+  "debug.javascript.defaultRuntimeExecutable": {
+    "pwa-node": "node"
+  },
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:jni+resolve=off",
+  "tabnine.experimentalAutoImports": true,
+  "playwright.reuseBrowser": false,
+  "git.mergeEditor": true
 }

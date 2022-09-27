@@ -6,9 +6,14 @@
       "segments": [
         {
           "foreground": "#ffffff",
+          "properties": {
+            "linux": "<#82e2ff>\ue27f</>",
+            "macos": "<#82e2ff>\ue27f</>",
+            "windows": "<#82e2ff>\ue27f</>"
+          },
           "style": "plain",
-          "template": "🚀",
-          "type": "text"
+          "template": "<#ffffff></>{{ if .WSL }}WSL at {{ end }}{{.Icon}}<#ffffff>  </>",
+          "type": "os"
         },
         {
           "foreground": "#a277ff",
@@ -34,8 +39,35 @@
             "fetch_upstream_icon": true
           },
           "style": "powerline",
-          "template": " {{ .HEAD }} {{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}} \uf692 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }} ",
+          "template": " {{ .HEAD }} {{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}} \uf692 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }}",
           "type": "git"
+        },
+        {
+          "foreground": "#f694ff",
+          "properties": {
+            "fetch_package_manager": true
+          },
+          "style": "plain",
+          "template": "<#ffffff></>{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}<#ffffff> </>",
+          "type": "node"
+        },
+        {
+          "foreground": "#f694ff",
+          "style": "plain",
+          "type": "java",
+          "template": " \uE738 {{ .Full }}"
+        },
+        {
+          "foreground": "#f694ff",
+          "style": "plain",
+          "template": "<#ffffff> </>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff> </>",
+          "type": "rust"
+        },
+        {
+          "foreground": "#f694ff",
+          "style": "plain",
+          "template": "<#ffffff> </>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff> </>",
+          "type": "angular"
         },
         {
           "foreground": "#ff6767",
