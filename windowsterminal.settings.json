@@ -4,18 +4,36 @@
   "actions": [
     {
       "command": {
-        "action": "copy",
-        "singleLine": false
+        "action": "sendInput",
+        "input": "cd ~/Projects"
       },
-      "keys": "ctrl+c"
+      "keys": "ctrl+up",
+      "name": "Projects folder"
+    },
+    {
+      "command": "duplicateTab",
+      "keys": "ctrl+shift+d"
+    },
+    {
+      "command": "find",
+      "keys": "ctrl+shift+f"
     },
     {
       "command": "paste",
       "keys": "ctrl+v"
     },
     {
-      "command": "find",
-      "keys": "ctrl+shift+f"
+      "command": {
+        "action": "copy",
+        "singleLine": false
+      },
+      "keys": "ctrl+c"
+    },
+    {
+      "command": {
+        "action": "globalSummon"
+      },
+      "keys": "alt+t"
     },
     {
       "command": {
@@ -26,10 +44,47 @@
       "keys": "alt+shift+d"
     },
     {
-      "command": {
-        "action": "globalSummon"
-      },
-      "keys": "alt+t"
+      "command": "scrollUpPage",
+      "keys": "pgup"
+    },
+    {
+      "command": "unbound",
+      "keys": "ctrl+shift+pgup"
+    },
+    {
+      "command": "unbound",
+      "keys": "ctrl+shift+pgdn"
+    },
+    {
+      "command": "unbound",
+      "keys": "ctrl+shift+end"
+    },
+    {
+      "command": "unbound",
+      "keys": "shift+g"
+    },
+    {
+      "command": "unbound",
+      "keys": "ctrl+d"
+    },
+    {
+      "command": "unbound",
+      "keys": "ctrl+u"
+    },
+    {
+      "command": "unbound",
+      "keys": "ctrl+g"
+    },
+    {
+      "command": "unbound",
+      "keys": "pgdn"
+    },
+    {
+      "command": "scrollDownPage"
+    },
+    {
+      "command": "scrollToBottom",
+      "keys": "ctrl+shift+g"
     },
     {
       "commands": [
@@ -64,6 +119,46 @@
             "tabTitle": "Accountant"
           },
           "name": "Accountant"
+        },
+        {
+          "command": {
+            "action": "newTab",
+            "startingDirectory": "c:/Users/ktorok/Projects/WODster/traning-archive",
+            "tabTitle": "Training Archive"
+          },
+          "name": "Training Archive"
+        },
+        {
+          "command": {
+            "action": "newTab",
+            "startingDirectory": "c:/Users/ktorok/Projects/OFCI/Git/OFCI.notifications-service",
+            "tabTitle": "OFCI Notification Service"
+          },
+          "name": "OFCI Notification Service"
+        },
+        {
+          "command": {
+            "action": "newTab",
+            "startingDirectory": "c:/Users/ktorok/Projects/OFCI/Git/OFCI.ofci-frontend",
+            "tabTitle": "OFCI FrontEnd"
+          },
+          "name": "OFCI FrontEnd"
+        },
+        {
+          "command": {
+            "action": "newTab",
+            "startingDirectory": "c:/Users/ktorok/Projects/OFCI/Git/OFCI.ofci-service",
+            "tabTitle": "OFCI Service"
+          },
+          "name": "OFCI Service"
+        },
+        {
+          "command": {
+            "action": "newTab",
+            "startingDirectory": "c:/Users/ktorok/Projects/OFCI/Git/sgiacdb",
+            "tabTitle": "OFCI sgiacdb"
+          },
+          "name": "OFCI sgiacdb"
         }
       ],
       "name": "Go to project..."
@@ -71,11 +166,11 @@
   ],
   "copyFormatting": "none",
   "copyOnSelect": false,
-  "defaultProfile": "{5bc6f7b9-c7aa-4519-9f84-d4e03dd8beb4}",
+  "defaultProfile": "{aab79973-318f-43b6-a9bc-b4096493753f}",
   "firstWindowPreference": "persistedWindowLayout",
   "profiles": {
     "defaults": {
-      "colorScheme": "Aura Theme",
+      "colorScheme": "Nu Disco",
       "commandline": "powershell.exe -NoLogo -NoExit",
       "font": {
         "face": "FiraCode NF Retina",
@@ -89,11 +184,6 @@
       "useAcrylic": true
     },
     "list": [
-      {
-        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-        "hidden": false,
-        "name": "Windows PowerShell"
-      },
       {
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "hidden": false,
@@ -119,41 +209,39 @@
         "source": "Windows.Terminal.Wsl"
       },
       {
-        "guid": "{1cd79813-5972-56cb-badb-ba5ee12693c5}",
-        "hidden": false,
-        "name": "Default",
-        "source": "Windows.Terminal.Wsl"
-      },
-      {
         "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
         "hidden": false,
         "name": "Default",
         "source": "Windows.Terminal.PowershellCore"
       },
       {
-        "guid": "{5fb123f1-af88-5b5c-8953-d14a8def1978}",
-        "hidden": false,
-        "name": "Default",
-        "source": "Windows.Terminal.PowershellCore"
-      },
-      {
-        "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+        "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe /nologo",
+        "cursorShape": "bar",
         "guid": "{5bc6f7b9-c7aa-4519-9f84-d4e03dd8beb4}",
         "hidden": false,
         "icon": "C:\\Program Files\\PowerShell\\7\\assets\\Powershell_av_colors.ico",
         "name": "Power Shell 7"
       },
       {
-        "guid": "{b742f217-3851-5cda-8b37-24db41d51a93}",
+        "guid": "{136fef13-3fc3-53c1-96d0-9755eef30ba6}",
         "hidden": false,
         "name": "Default",
         "source": "Windows.Terminal.VisualStudio"
       },
       {
-        "guid": "{301a46f2-5aba-5e88-9ee8-ccb94db0e921}",
+        "colorScheme": "Nu Disco",
+        "commandline": "C:\\Program Files\\nu\\bin\\nu.exe",
+        "cursorShape": "bar",
+        "experimental.retroTerminalEffect": false,
+        "font": {
+          "face": "RecMonoDuotone Nerd Font",
+          "size": 11
+        },
+        "guid": "{aab79973-318f-43b6-a9bc-b4096493753f}",
         "hidden": false,
-        "name": "Default",
-        "source": "Windows.Terminal.VisualStudio"
+        "intenseTextStyle": "bright",
+        "name": "Nushell",
+        "source": "nu"
       }
     ]
   },
@@ -171,7 +259,7 @@
       "brightWhite": "#EDECEE",
       "brightYellow": "#FFCA85",
       "cursorColor": "#A277FF",
-      "cyan": "#EDECEE",
+      "cyan": "#82E2FF",
       "foreground": "#EDECEE",
       "green": "#61FFCA",
       "name": "Aura Theme",
@@ -180,6 +268,29 @@
       "selectionBackground": "#A394F0",
       "white": "#EDECEE",
       "yellow": "#FFCA85"
+    },
+    {
+      "background": "#191919",
+      "black": "#191919",
+      "blue": "#76D4FF",
+      "brightBlack": "#191919",
+      "brightBlue": "#76D5FF",
+      "brightCyan": "#6CBFB5",
+      "brightGreen": "#B7E876",
+      "brightPurple": "#BA76E7",
+      "brightRed": "#FF355B",
+      "brightWhite": "#C2C8D7",
+      "brightYellow": "#FFC251",
+      "cursorColor": "#F34B00",
+      "cyan": "#6CBFB5",
+      "foreground": "#B3C9D7",
+      "green": "#B7E876",
+      "name": "Bright Lights",
+      "purple": "#BA76E7",
+      "red": "#FF355B",
+      "selectionBackground": "#B3C9D7",
+      "white": "#C2C8D7",
+      "yellow": "#FFC251"
     },
     {
       "background": "#0C0C0C",
@@ -228,6 +339,29 @@
       "yellow": "#C19C00"
     },
     {
+      "background": "#1F1F28",
+      "black": "#090618",
+      "blue": "#7E9CD8",
+      "brightBlack": "#727169",
+      "brightBlue": "#7FB4CA",
+      "brightCyan": "#7AA89F",
+      "brightGreen": "#98BB6C",
+      "brightPurple": "#938AA9",
+      "brightRed": "#E82424",
+      "brightWhite": "#DCD7BA",
+      "brightYellow": "#E6C384",
+      "cursorColor": "#C8C093",
+      "cyan": "#6A9589",
+      "foreground": "#DCD7BA",
+      "green": "#76946A",
+      "name": "Kanagawa",
+      "purple": "#957FB8",
+      "red": "#C34043",
+      "selectionBackground": "#2D4F67",
+      "white": "#C8C093",
+      "yellow": "#C0A36E"
+    },
+    {
       "background": "#403E41",
       "black": "#403E41",
       "blue": "#FC9867",
@@ -249,6 +383,29 @@
       "selectionBackground": "#FFFFFF",
       "white": "#FCFCFA",
       "yellow": "#FFD866"
+    },
+    {
+      "background": "#0C001F",
+      "black": "#0C001F",
+      "blue": "#0081C2",
+      "brightBlack": "#4E465B",
+      "brightBlue": "#6BB5FF",
+      "brightCyan": "#C4FFFD",
+      "brightGreen": "#67E591",
+      "brightPurple": "#D5BDFF",
+      "brightRed": "#FF7878",
+      "brightWhite": "#F8F7F8",
+      "brightYellow": "#FFF373",
+      "cursorColor": "#F8F7F8",
+      "cyan": "#52E7E1",
+      "foreground": "#ECE9EC",
+      "green": "#06B741",
+      "name": "Nu Disco",
+      "purple": "#AD7DFF",
+      "red": "#E62424",
+      "selectionBackground": "#E7E4E7",
+      "white": "#ECE9EC",
+      "yellow": "#EEDA00"
     },
     {
       "background": "#282C34",

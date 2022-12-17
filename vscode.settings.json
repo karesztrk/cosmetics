@@ -59,7 +59,6 @@
   "debug.console.fontSize": 15,
   "editor.fontSize": 15,
   "editor.linkedEditing": true,
-  "workbench.iconTheme": "Monokai Pro Icons",
   "eslint.format.enable": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.inlineSuggest.enabled": true,
@@ -104,14 +103,12 @@
   "editor.formatOnSave": true,
   "workbench.preferredLightColorTheme": "Visual Studio Dark",
   "terminal.integrated.shellIntegration.enabled": true,
-  "workbench.colorTheme": "Nu Disco Dark",
   "git.useEditorAsCommitInput": false,
   "editor.cursorBlinking": "phase",
   "svg.preview.mode": "svg",
   "window.commandCenter": true,
   "terminal.integrated.shellIntegration.decorationsEnabled": "overviewRuler",
   "editor.tabSize": 2,
-  "workbench.productIconTheme": "bootstrap-product-icons",
   "git.enableCommitSigning": true,
   "editor.stickyScroll.enabled": true,
   "editor.stickyScroll.maxLineCount": 10,
@@ -119,8 +116,65 @@
   "debug.javascript.defaultRuntimeExecutable": {
     "pwa-node": "node"
   },
-  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:jni+resolve=off",
   "tabnine.experimentalAutoImports": true,
   "playwright.reuseBrowser": false,
-  "git.mergeEditor": true
+  "git.mergeEditor": true,
+  "editor.suggest.matchOnWordStartOnly": false,
+  "svelte.plugin.svelte.note-new-transformation": false,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "svelte.enable-ts-plugin": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "workbench.colorTheme": "Nu Disco Dark",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-space>": false
+  },
+  "editor.lineNumbers": "relative",
+  "vim.statusBarColorControl": false,
+  "vim.surround": false,
+  "vim.sneak": false,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "#00837F",
+  "workbench.productIconTheme": "bootstrap-product-icons",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.iconTheme": "moxer-icons",
+  "editor.accessibilitySupport": "off"
 }
