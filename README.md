@@ -1,3 +1,3 @@
 # About
 
-Customizations for [Oh my Posh](https://ohmyposh.dev/).
+Customizations & dot files for my workstation.
