@@ -1,0 +1,25 @@
+[legacy]
+always-check-default-terminal=true
+theme-variant='system'
+
+[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(12,0,31)'
+bold-color-same-as-fg=true
+bold-is-bright=true
+cursor-colors-set=false
+cursor-shape='underline'
+custom-command='/usr/bin/fish'
+default-size-columns=110
+default-size-rows=30
+font='RecMonoDuotone Nerd Font 12'
+foreground-color='rgb(236,233,236)'
+highlight-colors-set=false
+login-shell=false
+palette=['rgb(12,0,31)', 'rgb(230,36,36)', 'rgb(6,183,65)', 'rgb(238,218,0)', 'rgb(0,129,194)', 'rgb(173,125,255)', 'rgb(82,231,225)', 'rgb(236,233,236)', 'rgb(78,70,91)', 'rgb(255,120,120)', 'rgb(103,229,145)', 'rgb(255,243,115)', 'rgb(107,181,255)', 'rgb(213,189,255)', 'rgb(196,255,253)', 'rgb(248,247,248)']
+rewrap-on-resize=true
+scroll-on-output=false
+scrollbar-policy='always'
+use-custom-command=true
+use-system-font=false
+use-theme-colors=false
+visible-name='Garuda'
